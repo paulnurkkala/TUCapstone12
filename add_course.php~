@@ -4,8 +4,6 @@
    $hostname = "sql09.freemysql.net";
    $database = "tucapstone12";
 
-   phpinfo();
-
    $connection = mysql_connect($hostname,$username,$password);
 
    if(!$connection)
@@ -15,7 +13,7 @@
    else{
        echo '<hr>connection to database established.<hr>';
    }
-
+   
 ?>
 <html>
 	<head>
