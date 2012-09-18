@@ -1,5 +1,21 @@
-<?php
-   include 'db_connect.php';
+<?php 
+   $username = "paulnurkkala";
+   $password = "7e7s6y0k";
+   $hostname = "sql09.freemysql.net";
+   $database = "tucapstone12";
+
+info();
+
+   $connection = mysql_connect($hostname,$username,$password);
+
+   if(!$connection)
+   {
+       die('Could not connect: ' . mysql_error());
+   }
+   else{
+       echo '<hr>connection to database established.<hr>';
+   }
+
 ?>
 <html>
 	<head>

@@ -1,22 +1,13 @@
 <?php 
-   $username = "paulnurkkala";
-   $password = "7e7s6y0k";
-   $hostname = "sql09.freemysql.net";
-   $database = "tucapstone12";
-
-   $connection = mysql_connect($hostname,$username,$password);
-
-   if(!$connection)
-   {
-       die('Could not connect: ' . mysql_error());
-   }
-   else{
-   }
-
-   $mysql_select_db($database, $connection); 
-
-   $query = "INSERT INTO Course ('COS120', 'Introduction to Computer Science')";
+   include 'db_connect.php';
+   $query = "INSERT INTO Course VALUES ('COS121', 'Introduction to Computer Science II')";
    $result = mysql_query($query);
+   $error =  mysql_error();
+
+   if($error){
+	die('Error in query: ' . $error);
+   }
+
    var_dump($result);
 
 ?>   
