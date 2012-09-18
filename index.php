@@ -4,6 +4,8 @@
 <html>
 	<head>
 		<title>TU Capstone Study 2012</title>
+		<script type="text/javascript" src="jquery.js"> </script>
+		<script type="text/javascript" src="js.js"> </script>
 	</head>
 	<body>
 		<p>Welcome to the TU computer science capstone studying website.</p>
@@ -14,6 +16,9 @@
 		  <option value="">Person 2</option>
 		</select>
 		<br/>
-		<a href="#">Modify Questions</a>
+		<!--<a href="#">Modify Questions</a>-->
+		
+		<div class="course_list">
+		</div>
 	</body>
 </html>
