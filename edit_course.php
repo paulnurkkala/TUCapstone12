@@ -10,12 +10,15 @@
    }
 
    echo '<br><br>';
-      
+   
+   echo '<form action="save_course.php">';
    while($row = mysql_fetch_row($result))
    {
-	echo '<input type="text" value="'. $row[0] . '"/>';
-	echo '<input type="text" value="'. $row[1] . '"/>';
+	echo '<input name="cid" type="text" value="'. $row[0] . '"/>';
+	echo '<input name="name" type="text" value="'. $row[1] . '"/>';
    }
+   echo '<input type="submit"/>';
+   echo '</form>';   
 
 
    

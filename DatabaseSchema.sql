@@ -1,5 +1,5 @@
 CREATE TABLE Course (
-    cid varchar(20) PRIMARY KEY NOT NULL,
+        cid varchar(20) PRIMARY KEY NOT NULL,
 	name varchar(20)
 	);
 CREATE TABLE Question (

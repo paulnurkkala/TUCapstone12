@@ -21,26 +21,20 @@
 			<div class="navbar-inner">
 			    <a class="brand" href="index.php">TU Capstone Study 2012</a>
 			    <ul class="nav">
-			      <li class="active"><a href="index.php">Home (<?php echo $_SESSION['user'] ?>) </a></li>
+			      <li><a href="index.php">Home (<?php echo $_SESSION['user'] ?>) </a></li>
 			      <li><a href="questions.php">Questions</a></li>
 			      <li><a href="courses.php">Courses</a></li>
-			      <li><a href="quiz.php">Quiz</a></li>
+			      <li class="active"><a href="quiz.php">Quiz</a></li>
 			    </ul>
 			</div>
 		     </div>
 
 		     <!-- End Navbar --> 
-		<p>Welcome to the TU computer science capstone studying website.</p>
-		<p><b>Who are you?</b> (Whatever you say here
-		will be chached and reported to everyone else)</p>
-		<div class="user_list" value="">
-		</div>
 
-		<div class="add_user">
-		     <p> Or.. add user </p>
-		     <input class="new_user"/><button class="new_user_button">Add</button>
-		</div>
-		<br/>
+`		     <button class="random_button" type="button">Random</button><br/>
+		     <div class="well question_content"></div>
+		     <div class="well question_answer"></div>
+
 		
 </div>
 	</body>

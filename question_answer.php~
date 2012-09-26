@@ -1,0 +1,16 @@
+<?php 
+   include 'db_connect.php';
+
+   $query = "SELECT * FROM Course";
+   $result = mysql_query($query);
+   $error =  mysql_error();
+   if($error){
+	die('Error in query: ' . $error);
+   }
+   
+   echo '<table class="course_table">';
+   while($row = mysql_fetch_row($result))
+   {
+   }  
+
+?>

@@ -20,8 +20,11 @@
 	echo $row[1];
 	echo '</td>';
 	echo '<td>'; 
-	echo '<a href="edit_course.php?cid=' . $row[0] . ' ">EDIT</a>';
+	echo '<a href="edit_course.php?cid=' . $row[0] . ' ">Edit</a> ||';
 	echo '</td>';	
+	echo '<td>'; 
+	echo '<a href="delete_course.php?cid=' . $row[0] . ' ">Delete</a>';
+	echo '</td>';
    }
    echo '</table>';
 
