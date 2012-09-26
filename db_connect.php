@@ -11,6 +11,5 @@
        die('Could not connect: ' . mysql_error());
    }
    else{
-       echo '<hr>connection to database established.<hr>';
    }
 ?>

@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    alert('test');
+    $.post('view_courses.php', function(data) {
+	$('.course_list').html(data);
+    });
 });
