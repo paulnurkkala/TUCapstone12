@@ -47,6 +47,7 @@ if( $('#myModal').is(':hidden') ) {
 function getandParseJson(li){
 	
   $('li').removeClass("active");
+  $('li').removeClass("nada");
   var ID;
   if( $(li).attr("id")){
   	 ID = $(li).attr("id");
@@ -68,6 +69,11 @@ function getandParseJson(li){
 
      			$("#questionContainer").html(   jsonObj[0]["question"]   );
    	       	        $("#answerContainer").html  (   jsonObj[0]["answer"  ]   );
+			if(jsonObj[0]["CID"] == "111111"){
+				
+ 				 $(selector).removeClass("active");
+  				 $(selector).addClass("nada");
+				}
   		  curentIndex =0;
 		}
   		  updatecurrentqa();

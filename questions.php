@@ -39,7 +39,11 @@
 				float: left;
 				color:gray;
 				
-				}	
+				}
+			.nada{
+				color:red;
+				background-color:#CCCCCC;
+			     }
               	    </style>
 		   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
