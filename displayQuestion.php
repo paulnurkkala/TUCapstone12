@@ -1,14 +1,13 @@
 <?php 
    include 'db_connect.php';
-/*
-	debugging usefull queries
-	INSERT INTO Answer (qid, cid, answer, username) VALUES (1, "COS120", "Answer one for COS120", "eliezer");
 
-*/
-$_GET['cid'] = "COS120";
-$cid = $_GET["cid"];
+if(!($_POST["courseid"])) return;
+ 
+function getlistOfquestionsForCourse($acourse)
+{
+$cid =$acourse;
 
-   $query = 'SELECT * FROM Question q
+   $query = 'SELECT DISTINCT q.qid, a.cid , q.question, a.answer FROM Question q
    	     INNER JOIN Answer a ON a.qid = q.qid
 	     INNER JOIN Course c ON c.cid = a.cid
 	     WHERE 1 =1 
@@ -21,24 +20,20 @@ $cid = $_GET["cid"];
    if($error){
 	die('Error in query: ' . $error);
    }
-   
-   echo '<table class="question_table">';
+    $json;
+    
    while($row = mysql_fetch_row($result))
    {
 	
-	echo '<tr>'; 
-	echo '<td>';	
-	echo $row[1];
-	echo '</td>';	
-	echo '<td>';	
-	echo $row[0];
-	echo '</td>';
-	echo '<td>'; 
-	echo '<a href="edit_question.php?qid=' . $row[1] . ' ">EDIT</a>';
-	echo '</td>';	
+	$json .= '{"QID":"'.$row[0].'","CID":"'.$row[1].'", "question":"'.$row[2].'", "answer":"'.$row[3].'"}  ,';
    }
-   echo '</table>';
-
-
-   
+    $json = substr($json, 0, -1);  
+   echo $json;
+   if($json == ""){
+	   echo "nada";
+	   }
+return;
+}
+      
+   getlistOfquestionsForCourse($_POST["courseid"]);
 ?>   

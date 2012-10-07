@@ -18,6 +18,150 @@
  * ========================================================== */
 
 
+var curentIndex =1;
+var jsonObj;
+var updater = false;
+
+ function showModalEdit(){
+
+
+    $("#qContent").html(   jsonObj[curentIndex]["question"]   );
+     $("#aContent").html  (   jsonObj[curentIndex]["answer"  ]   );
+
+if( $('#myModal').is(':hidden') ) {
+    $('#myModal').removeClass('hide');
+      $('#myModal').removeClass('fade');
+    
+
+}else {
+
+    // it's not hidden so do something else
+      $('#myModal').addClass('hide');
+      $('#myModal').addClass('fade');
+    
+    
+}
+
+}
+
+function getandParseJson(li){
+	
+  $('li').removeClass("active");
+  var ID;
+  if( $(li).attr("id")){
+  	 ID = $(li).attr("id");
+  }else{
+	  ID = li;
+	  }
+   var selector = "#"+ID; 
+  $(selector).addClass("active");
+
+	 $.post('displayQuestion.php', {courseid:ID}, function(data) {
+		
+    		jsonObj = $.parseJSON('[' + data + ']');
+		$('#json').html(data);
+		if(updater){
+     			$("#questionContainer").html(   jsonObj[curentIndex]["question"]   );
+   	       	        $("#answerContainer").html  (   jsonObj[curentIndex]["answer"  ]   );
+			updater = false;
+		}else{
+
+     			$("#questionContainer").html(   jsonObj[0]["question"]   );
+   	       	        $("#answerContainer").html  (   jsonObj[0]["answer"  ]   );
+  		  curentIndex =0;
+		}
+  		  updatecurrentqa();
+   	 });
+
+  
+
+}
+
+function toogleAnswer(){
+
+if( $('#answerContainer').is(':hidden') ) {
+    $('#answerContainer').removeClass('hide');
+    $('#answerContainer').removeClass('fade');
+    
+
+}else {
+
+    // it's not hidden so do something else
+      $('#answerContainer').addClass('hide');
+      $('#answerContainer').addClass('fade');
+    
+    
+	}
+}
+function nextQandA(){
+    if(curentIndex < jsonObj.length-1){
+      curentIndex += 1;
+      updatecurrentqa();
+
+     }
+     $("#questionContainer").html(   jsonObj[curentIndex]["question"]   );
+     $("#answerContainer").html  (   jsonObj[curentIndex]["answer"  ]   );
+     
+
+
+  
+
+
+}
+
+
+function prevQandA(){
+    
+     
+if(curentIndex > 0 ){
+      curentIndex--;
+      updatecurrentqa();
+
+     }
+  $("#questionContainer").html(   jsonObj[curentIndex]["question"]   );
+  $("#answerContainer").html  (   jsonObj[curentIndex]["answer"  ]   );
+  
+  
+
+
+}
+
+function updatecurrentqa(){
+    
+   var cpindex = (curentIndex+1);
+  $("#cureentIndex").html(  cpindex   );
+  $("#qandtotal").html  (   jsonObj.length   );
+
+    updateModal();
+
+
+}
+function updateModal(){
+  $("#qContent").val(   jsonObj[curentIndex]["question"]   );
+     $("#aContent").val  (   jsonObj[curentIndex]["answer"  ]   );
+
+
+}
+function saveModal(){
+    
+	var qid = jsonObj[curentIndex]["QID" ]; 
+	var cid = jsonObj[curentIndex]["CID"  ]; 
+	 $.post('update_QandA.php', {CID:cid, QID:qid,
+	 				Question:$("#qContent").val() ,
+					Answer:$("#aContent").val() },
+					function(data) {
+		updater = true;
+		
+		getandParseJson(cid);
+		showModalEdit();
+   	 });
+
+
+     
+
+
+}
+
 !function ($) {
 
   $(function () {
