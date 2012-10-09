@@ -59,7 +59,7 @@ function getandParseJson(li){
 
 	 $.post('displayQuestion.php', {courseid:ID}, function(data) {
 		
-    		jsonObj = $.parseJSON('[' + data + ']');
+    		jsonObj = $.parseJSON(  data  );
 		$('#json').html(data);
 		if(updater){
      			$("#questionContainer").html(   jsonObj[curentIndex]["question"]   );

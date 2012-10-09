@@ -102,7 +102,6 @@
 			echo $output; 
 		   }
 		   
-		   
                 ?>
              
             
@@ -136,6 +135,7 @@
  		echo '<p class="hide" id="json">';
 		getlistOfquestionsForCourse("COS120");
 		echo '</p>';
+
 
 	?>
 
