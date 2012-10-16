@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
     
     $('.new_user_button').bind('mouseup', function(){
-	var $user = ($('.new_user').val());
+	var $id = ($('.new_user').val());
 	$.post('set_user_session.php', {user: $user}, function(data){
 	    $.post('show_user.php', function(data){
 		if(data){
