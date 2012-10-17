@@ -82,7 +82,9 @@
  		<li class="nav-header">Course List</li>
               
 		<?php 
-		   $query = "SELECT DISTINCT cid, name  FROM Course";
+		   $query = "SELECT DISTINCT C.cid, C.name  FROM Course C
+		   	     INNER JOIN UserCourse UC ON UC.cid = C.cid
+			     ";
 		   $result = mysql_query($query);
 		   $error =  mysql_error();
 		   if($error){
@@ -94,7 +96,7 @@
 		   while($row = mysql_fetch_row($result))
 		   {
 			if($first){
-				$output =  '<li id ="'.$row[0].'" class="active" > <a  onclick="getandParseJson(this);" id = "'.$row[0].'">'.$row[1].'</a></li>';
+				$output =  '<li id ="'.$row[0].'" class="active" > <a class = "firstCourse" onclick="getandParseJson(this);" id = "'.$row[0].'">'.$row[1].'</a></li>';
 				$first = false;
 			}else{
 				$output =  '<li id = "'.$row[0].'" ><a onclick="getandParseJson(this);" id = "'.$row[0].'">'.$row[1].'</a></li>';
@@ -116,8 +118,8 @@
 
         <div class="span9 ">
           <div class="hero-unit main">
-	   <h4 id="questionContainer">Question here</h4>
-            <p><i id="answerContainer">answer will go here<i></p>
+	   <h4 id="questionContainer"></h4>
+            <p><i id="answerContainer"><i>Please go to the Courses Tab and select courses which you have taken</p>
 
             
           </div>
@@ -131,13 +133,6 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-	<?php 
- 		echo '<p class="hide" id="json">';
-		getlistOfquestionsForCourse("COS120");
-		echo '</p>';
-
-
-	?>
 
       <hr>
 
@@ -153,11 +148,11 @@
 <div id="myModal" class="modal hide fade">
   <div class="modal-header">
     <button type="button"  onclick="showModalEdit();" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-   <textarea id="qContent" style="width:13cm; font-size: 20px;" rows="4" cols="50"  > Question content will go here</textarea>
+   <textarea id="qContent" style="width:13cm; font-size: 20px;" rows="4" cols="50"  > </textarea>
   </div>
   <div class="modal-body">
     
-  <textarea id="aContent" style="width:13cm"  cols="50" rows="6">and the answer will go here of course!</textarea>
+  <textarea id="aContent" style="width:13cm"  cols="50" rows="6"></textarea>
   </div>
   <div class="modal-footer">
     <a  onclick="showModalEdit();" class="btn">Close</a>
@@ -188,7 +183,8 @@
     <script type="text/javascript">
 
  window.onload = function () {
-	    getandParseJson("COS120");
+	    var courseID = $(".firstCourse").attr("id");
+	    getandParseJson(courseID);
  }
 
     </script>
