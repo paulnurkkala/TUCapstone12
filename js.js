@@ -5,8 +5,10 @@ $(document).ready(function() {
     $.post('view_users.php', function(data) {
 	$('.user_list').html(data);
 	$('.user_list').bind('change', function(){
-	    var $user = ($('#user_list').val());
-	    $.post('set_user_session.php', {user: $user}, function(data){
+	    var user = document.getElementById("user_list");
+	    var selectedText = user.options[user.selectedIndex].text;
+	    var $userID = ($('#user_list').val());
+	   $.post('set_user_session.php', {userid: $user, username: selectedText}, function(data){
 		$.post('show_user.php', function(data){
 		    if(data){
 			$('.user_list').html('You are now logged in as ' + data + '.'); 
@@ -51,3 +53,15 @@ $(document).ready(function() {
 
  
 });
+
+function saveUserCourse(course){
+	var courseID = $(course).val();
+	var checked = course.checked;
+	var userId = $(course).attr("user");
+	$.post('save_course.php',{course:courseID, userID: userId, selected:checked}, function(data){
+		if(data){
+			alert(data);
+		}
+	    });
+
+	}
