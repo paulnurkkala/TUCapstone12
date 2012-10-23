@@ -125,8 +125,8 @@
           </div>
           <div >
             <p><a onclick="prevQandA();" style="float:left" class="btn btn-primary btn-large"> &laquo; Previous </a></p>
-          <p style="padding-left:8cm;"> <span id="cureentIndex"> 1  </span> / 
-            <span id="qandtotal"> 7 </span> </p>
+          <p style="padding-left:8cm;"> <span id="cureentIndex"> 0  </span> / 
+            <span id="qandtotal"> 0 </span> </p>
             <p onclick="nextQandA();" style="float:right"><a   class="btn btn-primary btn-large">Next &nbsp &nbsp  &nbsp &nbsp &raquo;</a></p>
           </div>
           

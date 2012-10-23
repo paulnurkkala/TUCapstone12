@@ -9,7 +9,7 @@
    if($error){
 	die('Error in query: ' . $error);
    }
-    $_SESSION['user_id'] = 7; 
+  
    echo '<table class="course_table">';
    $checked;
    while($row = mysql_fetch_row($result))
@@ -32,7 +32,6 @@
 	echo '</td>';
    }
    echo '</table>';
-
 
    
 ?>   
