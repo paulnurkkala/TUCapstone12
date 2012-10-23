@@ -18,14 +18,20 @@ $(document).ready(function() {
     
     $('.new_user_button').bind('mouseup', function(){
 	var $id = ($('.new_user').val());
-	$.post('set_user_session.php', {user: $user}, function(data){
+	var $user = ($('.new_user').val()); 
+	$.post('set_user_session.php', {id: $id, user: $user}, function(data){
 	    $.post('show_user.php', function(data){
+    		$.post('add_user.php', {id: $id, user: $user}, function(data){
+		    console.log(data);
+		});
 		if(data){
 		    $('.user_list').html('You are now logged in as ' + data + '.'); 
 		}
 	    });
 	});
     });
+
+
 
 
     $('.random_button').bind('mouseup', function(){

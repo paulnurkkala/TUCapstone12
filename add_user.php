@@ -8,6 +8,8 @@
 
    	$username = 'paul'; 
 	$password = 'password'; 
+	
+	$username = $_POST['user']; 
 
 	$query = "INSERT INTO User VALUES(0,'";
 	$query .= $username;
