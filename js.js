@@ -7,8 +7,8 @@ $(document).ready(function() {
 	$('.user_list').bind('change', function(){
 	    var user = document.getElementById("user_list");
 	    var selectedText = user.options[user.selectedIndex].text;
-	    var $userID = ($('#user_list').val());
-	   $.post('set_user_session.php', {userid: $user, username: selectedText}, function(data){
+	    var userID = ($('#user_list').val());
+	   $.post('set_user_session.php', {userid: userID, username: selectedText}, function(data){
 		$.post('show_user.php', function(data){
 		    if(data){
 			$('.user_list').html('You are now logged in as ' + data + '.'); 
@@ -19,11 +19,11 @@ $(document).ready(function() {
     });
     
     $('.new_user_button').bind('mouseup', function(){
-	var $id = ($('.new_user').val());
-	var $user = ($('.new_user').val()); 
-	$.post('set_user_session.php', {id: $id, user: $user}, function(data){
+	var id = ($('.new_user').val());
+	var user = ($('.new_user').val()); 
+	$.post('set_user_session.php', {id: id, user: user}, function(data){
 	    $.post('show_user.php', function(data){
-    		$.post('add_user.php', {id: $id, user: $user}, function(data){
+    		$.post('add_user.php', {id: id, user: user}, function(data){
 		    console.log(data);
 		});
 		if(data){
