@@ -25,6 +25,7 @@
 			      <li><a href="questions.php">Questions</a></li>
 			      <li><a href="courses.php">Courses</a></li>
 			      <li><a href="quiz.php">Quiz</a></li>
+			      <li><a href="logout.php">Logout</a></li>
 			    </ul>
 			</div>
 		     </div>
