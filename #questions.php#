@@ -85,7 +85,6 @@
 		<?php 
 		   $query = "SELECT DISTINCT C.cid, C.name  FROM Course C
 		   	     INNER JOIN UserCourse UC ON UC.cid = C.cid
-			     WHERE UC.uid = ".$_SESSION['user_id']."
 			     ";
 		   $result = mysql_query($query);
 		   $error =  mysql_error();

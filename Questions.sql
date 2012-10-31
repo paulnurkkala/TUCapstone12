@@ -1048,124 +1048,1048 @@ INSERT INTO Question (qid, question, average_result) VALUES
 
 DELETE FROM Answer;
 INSERT INTO Answer (qid, cid, answer, username) VALUES 
-("1631", "COS425", "Compositing is like the post production when you make it look pretty. For example&#44; you could add fog&#44; color balance&#44; etc. It's useful in animation because it allows you to layer images and create effects that you can't do while you animate. It can also be useful for reducing the amount of time to create certain effects.", "AC/DK"), 
-("1642", "COS265", "Event handlers ", NULL), 
-("1655", "COS382", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("1661", "COS265", "It will take 1000 units of time", "SRW"), 
-("1707", "COS121", "A stack is a last in&#44; first out (LIFO) abstract data type and linear data structure. Also known for  two fundamental operation called pop and push.", "NJC"), 
-("1724", NULL, "Use a filter to determine the rate of change in intensity of pixels. The areas with higher values will generally be where edges are.", "SRW"), 
-("1728", "IAS330", "No.", NULL), 
-("1733", "COS350", "Diffuse surfaces do not reflect as much light; they are matte. Specular surfaces have highlights and reflect more light.", NULL), 
-("1734", NULL, "Affordance is a quality of an object which allows some action to be performed. In Software design this means that people come to a program expecting that certain actions will be there and they want the software design to reflect that these actions can be accomplished. ", "AAC"), 
-("1736", "COS350", "Vectors are created via mathematical equations and raster graphics are based on pixels. This is why there is such a quality differences between when images are enlarged or shrunk between vector graphics and raster graphics.", "AAC"), 
-("1738", NULL, "The technical advantages are the site uses less bandwidth and loads faster&#44; the site will get better search results&#44;... The organization advantages are the content is separated from the design&#44;...", "NJC"), 
-("824", "SYS214", "The gulf of execution is the gap between a users desired goal and the means to achieve that goal given by a system. The gulf of evaluation is the gap between the result of an action and the users ability to interpret the result of that action. (or the amount of difficulty the user has in determining the state of a system) ", "DKK"), 
-("825", "COS351", "know it.", "DKK"), 
-("498", "COS341", "http://www.1keydata.com/datawarehousing/data-modeling-levels.html", NULL), 
-("117", "SYS390", "ERD's illustrate the logical structure of a database. A data modeling technique used in software engineering to produce a conceptual data model of a information system. A box with student and a box with classes with a one to many relationship. ", NULL), 
-("853", "SYS390", "Entity Relationship Diagram is a diagram of a database design", "AK"), 
-("854", "COS265", "Bubble sort FTW!", NULL), 
-("863", "SYS101", "Data encryption&#44; Data backup&#44; Access controls&#44; Input validation&#44; and Data validation", "NJC"), 
-("989", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AS"), 
-("1028", "COS265", "An algorithm that uses the technique of taking the optimal choice at every point with the hope being that it leads to the best overall outcome.", NULL), 
-("1032", "COS120", "A functional programming language is: 1. a programming language that focuses on functions&#44; rather than state changes&#44; as a means of evaluating expressions&#44; and it can be cross-platformed.", "MCW"), 
-("1033", "COS265", "A hash is a way of storing data that allows for constant time (O(1)) searching of data.  Collisions are problems", "BN"), 
-("1338", "SYS390", "Entities in an ERD turn into tables in an RDBMS and attributes turn into table columns", "AK"), 
-("1442", "COS435", "Just as powerful as each other (can both be used to represent the same languages). DFA is more efficient when implemented&#44; NFA is often easier to work with when trying to define a language.", "SRW"), 
-("1479", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AK"), 
-("1517", NULL, "\"\"\"http\:s?\/\/www\.\w+\.com\"\" These can be very useful when searching for substrings or matching inputs that can take a variety of forms\"", "SRW"), 
-("262", "COS250", "Static memory allocation is storing data on a segment of memory by the compiler before run-time; whereas&#44; dynamic allocation stores data on heap and is assigned by functions during run-time.", "MCW"), 
-("1627", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AK"), 
-("1699", NULL, "The System of Quality is Prevention", "SRW"), 
-("1730", "COS265", "In event driven programming&#44; the program does nothing except listen for events. Once an event happens&#44; specific code is run. In procedural programming&#44; each line of code simply executes after the line before it. An event is anything that the program can detect&#44; such as a button getting clicked or the system clock reaches a certain time.", "AD"), 
-("1023", "COS265", "No. I can't.", NULL), 
-("1026", "COS230", "Technology in the future. Because it doesn't exist.", NULL), 
-("616", "COS381", "Yes", NULL), 
-("1067", "SYS390", "Conformance to requirements", "AK"), 
-("1336", "COS121", "A bunch of nodes that each contain a payload and a pointer to the next node", "SRW"), 
-("1523", "COS435", "Yes", "SRW"), 
-("1121", "COS284", "The decimal value is 92 and the hex value is 0x5c", "AK"), 
-("811", "COS121", "Data in a Stack is accessed in reverse order that it is inserted (Last In First Out). Data in a Queue is accessed in the same order it is inserted (First In First Out). Both a Stack and a Queue can be represented by an array or linked list. Push refers to inserting data and Pop refers to extracting data from a Stack/Queue", "DKK"), 
-("837", NULL, "Did we even study this?", NULL), 
-("314", "COS252", "Draw a picture of a tree. Literally.", NULL), 
-("859", "COS264", "AJAX is NOT a language or technology in itself; but uses a combination of HTML&#44; CSS&#44; DOM (accessed with Javascript)&#44; asynchronously exchanging of data from browser to server avoiding page reloads&#44; and returning data formats from server to browser in plain text&#44; JSON&#44; or XHTML to name a few.", "MCW"), 
-("864", "COS121", "Static memory allocation refers to the process of allocating memory at compile-time before the associated program is executed and dynamic memory allocation is where memory is allocated as required at run-time.", "NJC"), 
-("61", "SYS310", "Enterprise Resource Planning - integrates internal and external data across an entire company (finance&#44; manufacturing&#44; customer service&#44; sales&#44; etc..)", "AS"), 
-("1222", "SYS394", "1. Write a concise decision statement 2. Specify objectives and divide into 'Musts' and 'Wants' 3. Evaluate each option against musts 4. Weigh each want from 1-10 5. Evaluate each option against wants ", NULL), 
-("1434", NULL, "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1590", NULL, "\"When RAM is insufficient while running applications simultaneously&#44; a computer looks at how much of that memory hasn't been used recently by an application and copies that memory to the hard drive. When switching between applications&#44; the now virtual memory exchanges the memory from the hard disk to the RAM allowing supposed \"\"unlimited\"\" RAM.\"", "MCW"), 
-("1718", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
-("1737", NULL, "CSS Selectors are pattern matching rules that determine which elements are styled according to which rule.  (HTML Example - div.info)", NULL), 
-("1017", NULL, "care about what?", NULL), 
-("1243", "COS121", "A stack is an abstract data structure which follows a LIFO (last in first out) method. In programming&#44; however&#44; the stack is a static allocation of memory and stores function parameters. These parameters can be popped out directly by functional call or have the top popped off in LIFO order.", "MCW"), 
-("1250", "COS121", "A stack uses the last in&#44; first out (LIFO) method. This is also known as pop and push. When an object that is placed in the stack is goes to the back or the bottom of the stack which is known as the push. If you remove an object from a stack you remove it from the top of the stack which is known as the pop.", "NJC"), 
-("352", "COS264", "CSS means Cascading Style Sheet. This is the file that hold all the code that makes a webpage look pretty. ", "NJC"), 
-("1180", "COS265", "Event handlers are pieces of codes that handle events such as click&#44; hover&#44; etc. This code creates a new button that has a push function. change.setText changes the text displayed on the button to Change null. Then&#44; you add an event listener to the button which handles the push event and does something appropriate.", "aac"), 
-("1639", NULL, "Depends on their stock.", NULL), 
-("282", "COS250", "Deep copy is stored in a separate memory address. Shallow copy just copies the value but is really just a pointer to the original.", "SRW"), 
-("281", "COS250", "[I have an answer for this&#44; but it's an image&#44; so I'm not sure what to do with it]", "BN"), 
-("400", "COS320", "Binary trees have at most 2 leaves per node&#44; n-ary trees have at most n leaves per node.", "SRW"), 
-("972", "COS284", "Creates a copy of the running process so there are two parallel processes that are exactly the same", "AK"), 
-("386", "COS320", "A directed acyclic graph in which each node has at most two branches.", "SRW"), 
-("291", "COS252", "Union: members of either set or both. Intersection: members of both sets only.", "SRW"), 
-("1084", NULL, "Document Object Model - cross language platform that for interacting with HTML&#44; XHTML&#44; XML", "AS"), 
-("1092", "SYS411", "Start with an initial random population. Give each individual a fitness according to the fitness function. Apply some kind of pooling technique (e.g. binary tournament) to generate the pool of parents. Apply crossover and mutation operators to individuals in the pool to create a new population. Test for convergence. If true&#44; you are done&#44; else check fitness again and cycle through the process again.", "SRW"), 
-("1262", "COS311", "The doctrine that actions are right if they are useful or for the benefit of a majority.", "NJC"), 
-("1606", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AS"), 
-("1174", "COS121", "A queue is FIFO list. That means that the first thing to go in the array is the first that comes out. Its like a line. When people stand on the line for something&#44; the first person on the line is the first person to get served. You join the line at the back and leave at the front.", "NJC"), 
-("1426", "SYS411", "Crossover makes changes to individuals within a population by mixing them in some way with other individuals&#44; while mutation changes an individual randomly&#44; causing variation within the population.", "SRW"), 
-("1689", "SYS214", "This basically means that if you design a website that is easy and quick to use and navigate through then the user doesn't mind looking through your site. But if the site is hard to navigate through then the user will probably leave the site and will not be interested even if you site is really important.", "NJC"), 
-("1714", NULL, "Using event listeners and event handlers to drive the logical flow. This means that the program waits for some kind of outside input and responds to it&#44; as opposed to just running through a sequence of commands.", "SRW"), 
-("1723", NULL, "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK"), 
-("90", "SYS352", "Backwards chaining starts with a goal and tries to prove it using the set of initial facts.  Forward-chaining starts with the initial facts and starts establishing everything that can be established from those facts.  CLIPS more naturally supports forward chaining", "BN"), 
-("1331", "COS284", "Each case gets a different memory address. A jump table lists all of these addresses and the index is used to move control flow into the correct position in the table.", "SRW"), 
-("833", "COS314", "Feedback is important because this is the way that you can find out what things you did well and what things you need to work on and things that you missed or should add. Basically it is so that you find out if the project you are working on is what people will like or not.", "NJC"), 
-("875", NULL, "http://en.wikipedia.org/wiki/Ajax_(programming)", "AK"), 
-("627", "COS381", "Reverse engineering compiled code. Squeezing every bit of optimization out of a program. Understanding what is going on under the hood.", "SRW"), 
-("1075", NULL, "Optimization and classification problems that are quantifiable and have no good brute force solution.", "SRW"), 
-("987", "COS284", "Sometimes", "SRW"), 
-("289", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("917", NULL, "number of modes", NULL), 
-("345", "COS264", "Pieces of data transmitted across the web stored in a user's browser that can be referenced by the web page they oriented from to access a user's previous activity or data.", "AS"), 
-("973", "COS284", "Re-associates the current thread with a new program.", "SRW"), 
-("1622", NULL, "First prove for 1. Then prove for n+1. Now you have proved for all cases.", "SRW"), 
-("1647", NULL, "Lots of parentheses. Allows programming from the bottom up. Can be used to very quickly write functions. Great for processing lists.", "SRW"), 
-("1441", "SYS411", "\"Subfield of artificial intelligence. Deals with algorithms that can \"\"learn\"\". They take information as input and try to come up with patterns or ways of interpreting the data in order to make decisions.\"", "SRW"), 
-("931", NULL, "Provide a counterexample.", "SRW"), 
-("1142", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
-("1175", "COS121", "Write a function that calls itself. More specifically&#44; you want to have a base case and a recursive case. The base case indicates when to stop recursing&#44; and is what you eventually want to reach. The recursive case(s) call the function again.", "SRW"), 
-("1635", "SYS411", "\"Basic unit is a perceptron. Takes input and applies a function to it to determine if it will \"\"fire\"\" or not (produces output). Many of these can be linked together to form a network. To make a useful neural net&#44; feedback is crucial. This means that the network changes if perceptrons fired incorrectly. Over time&#44; the network will become better at doing its job.\"", "SRW"), 
-("1221", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1074", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("1491", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1116", "COS264", "Document Object Model - cross language platform that for interacting with HTML&#44; XHTML&#44; XML", "AK"), 
-("1557", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
-("1102", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
-("943", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1424", "COS382", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("848", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("1013", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("695", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1018", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("1553", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1054", "MAT215", "\"De Morgan's laws are a pair of transformation rules that are both valid rules of inference. The rules allow the expression of conjunctions and disjunctions purely in terms of each other via negation.   EXAMPLE: ~(P ^ Q) = (~P) v (~Q) The rules can be expressed in English as: \n The negation of a conjunction is the disjunction of the negations. \n The negation of a disjunction is the conjunction of the negations.\"", "AK"), 
-("1514", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1578", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1596", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
-("998", "COS425", "Ray tracing is when you take into account all the light and how it bounces off every single object", NULL), 
-("1059", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("380", "COS320", "Not as much as Ada Lovelace.", NULL), 
-("1066", "COS351", "Through transformation matrices", NULL), 
-("1087", "COS425", "Driven key animation is when an animated motion is determined or driven by a value other than time. For example when the width an object is calculated by its distance from the origin in the Y direction. ", "DK"), 
-("982", NULL, "1. Connection: TCP is connection -oriented. UDP is connectionless. You don't know if it'll get there. 2. Order: With TCP data packets will arrive in the correct order. UDP there is no order. 3. Weight: TCP Is more heavy weight since packets packets may arrive in the wrong order and resent requests have to be sent. UDP doesn't have a connection or order&#44; so it's a lot quicker. 4. Streaming: Data is read as a strema with TCP. There may be multiple packets per read call. UDP is more of a datagram --  one packet per one read call.", NULL), 
-("1555", NULL, "Javascript can add/modify/remove DOM elements.  It can move elements around and can access parents&#44; siblings&#44; and children of elements.", "AK"), 
-("1644", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("582", "COS351", "(Both are image processing filters using kernels) Erosion replaces each pixel with the min of all pixels in kernel&#44; dilation is the max of all pixels in kernel.", "SRW"), 
-("1483", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("1010", "COS280", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
-("1064", "SYS101", "NO.", NULL), 
-("1015", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
-("1670", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
-("994", "COS311", "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK"), 
-("1068", "COS311", "\"Kantian ethics are deontological&#44; revolving entirely around duty rather than emotions or end goals. All actions are performed in accordance with some underlying maxim or principle&#44; which are deeply different from each other; it is according to this that the moral worth of any action is judged. Kant's ethics are founded on his view of rationality as the ultimate good and his belief that all people are fundamentally rational beings. This led to the most important part of Kant's ethics&#44; the formulation of the Categorical Imperative&#44; which is the criterion for whether a maxim is good or bad. The Formulation Rule of Kantianism: \nAct only according to that maxim by which you can at the same time will that it would become a universal law. \n Act so that you always treat others as an end&#44; and never as a means to an end only.\"", "AK"), 
-("1203", "COS311", "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK");
+("1619", "COS340", "", NULL), 
+("1628", "COS350", "", NULL), 
+("1631", "COS425", "Compositing is like the post production when you make it look pretty. For example&#44; you could add fog&#44; color balance&#44; etc. It's useful in animation because it allows you to layer images and create effects that you can't do while you animate. It can also be useful for reducing the amount of time to create certain effects.", "AC/DK"), 
+("1642", "COS265", "Event handlers ", NULL), 
+("1655", "COS382", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1657", "COS284", "", NULL), 
+("1661", "COS265", "It will take 1000 units of time", "SRW"), 
+("1666", "COS351", "", NULL), 
+("1705", "MAT151", "", NULL), 
+("1707", "COS121", "A stack is a last in&#44; first out (LIFO) abstract data type and linear data structure. Also known for  two fundamental operation called pop and push.", "NJC"), 
+("1709", "SYS390", "", NULL), 
+("1710", "SYS401", "", NULL), 
+("1719", NULL, "", NULL), 
+("1724", NULL, "Use a filter to determine the rate of change in intensity of pixels. The areas with higher values will generally be where edges are.", "SRW"), 
+("1725", "COS265", "", NULL), 
+("1726", "COS265", "", NULL), 
+("1727", "COS265", "", NULL), 
+("1728", "IAS330", "No.", NULL), 
+("1729", NULL, "", NULL), 
+("1731", NULL, "", NULL), 
+("1733", "COS350", "Diffuse surfaces do not reflect as much light; they are matte. Specular surfaces have highlights and reflect more light.", NULL), 
+("1734", NULL, "Affordance is a quality of an object which allows some action to be performed. In Software design this means that people come to a program expecting that certain actions will be there and they want the software design to reflect that these actions can be accomplished. ", "AAC"), 
+("1736", "COS350", "Vectors are created via mathematical equations and raster graphics are based on pixels. This is why there is such a quality differences between when images are enlarged or shrunk between vector graphics and raster graphics.", "AAC"), 
+("1738", NULL, "The technical advantages are the site uses less bandwidth and loads faster&#44; the site will get better search results&#44;... The organization advantages are the content is separated from the design&#44;...", "NJC"), 
+("824", "SYS214", "The gulf of execution is the gap between a users desired goal and the means to achieve that goal given by a system. The gulf of evaluation is the gap between the result of an action and the users ability to interpret the result of that action. (or the amount of difficulty the user has in determining the state of a system) ", "DKK"), 
+("825", "COS351", "know it.", "DKK"), 
+("498", "COS341", "http://www.1keydata.com/datawarehousing/data-modeling-levels.html", NULL), 
+("70", "SYS352", "", NULL), 
+("830", "COS425", "", NULL), 
+("117", "SYS390", "ERD's illustrate the logical structure of a database. A data modeling technique used in software engineering to produce a conceptual data model of a information system. A box with student and a box with classes with a one to many relationship. ", NULL), 
+("608", "COS381", "", NULL), 
+("843", NULL, "", NULL), 
+("844", "COS425", "", NULL), 
+("550", "COS350", "", NULL), 
+("851", "SYS394", "", NULL), 
+("853", "SYS390", "Entity Relationship Diagram is a diagram of a database design", "AK"), 
+("854", "COS265", "Bubble sort FTW!", NULL), 
+("30", "SYS200", "", NULL), 
+("862", "SYS214", "", NULL), 
+("863", "SYS101", "Data encryption&#44; Data backup&#44; Access controls&#44; Input validation&#44; and Data validation", "NJC"), 
+("865", NULL, "", NULL), 
+("405", "COS320", "", NULL), 
+("879", NULL, "", NULL), 
+("886", NULL, "", NULL), 
+("892", NULL, "", NULL), 
+("918", NULL, "", NULL), 
+("924", "COS351", "", NULL), 
+("479", "COS340", "", NULL), 
+("230", "COS240", "", NULL), 
+("945", "COS121", "", NULL), 
+("989", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AS"), 
+("1028", "COS265", "An algorithm that uses the technique of taking the optimal choice at every point with the hope being that it leads to the best overall outcome.", NULL), 
+("254", "COS250", "", NULL), 
+("957", "COS284", "", NULL), 
+("246", "COS250", "", NULL), 
+("1032", "COS120", "A functional programming language is: 1. a programming language that focuses on functions&#44; rather than state changes&#44; as a means of evaluating expressions&#44; and it can be cross-platformed.", "MCW"), 
+("977", "COS284", "", NULL), 
+("959", "COS284", "", NULL), 
+("1033", "COS265", "A hash is a way of storing data that allows for constant time (O(1)) searching of data.  Collisions are problems", "BN"), 
+("1034", "COS265", "", NULL), 
+("1036", NULL, "", NULL), 
+("1042", NULL, "", NULL), 
+("1043", NULL, "", NULL), 
+("269", "COS250", "", NULL), 
+("1106", "SYS394", "", NULL), 
+("1240", NULL, "", NULL), 
+("1245", "SYS394", "", NULL), 
+("1338", "SYS390", "Entities in an ERD turn into tables in an RDBMS and attributes turn into table columns", "AK"), 
+("1341", NULL, "", NULL), 
+("1442", "COS435", "Just as powerful as each other (can both be used to represent the same languages). DFA is more efficient when implemented&#44; NFA is often easier to work with when trying to define a language.", "SRW"), 
+("1454", NULL, "", NULL), 
+("1479", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AK"), 
+("1517", NULL, "\"\"\"http\:s?\/\/www\.\w+\.com\"\" These can be very useful when searching for substrings or matching inputs that can take a variety of forms\"", "SRW"), 
+("1520", NULL, "", NULL), 
+("1521", NULL, "", NULL), 
+("1562", NULL, "", NULL), 
+("404", "COS320", "", NULL), 
+("262", "COS250", "Static memory allocation is storing data on a segment of memory by the compiler before run-time; whereas&#44; dynamic allocation stores data on heap and is assigned by functions during run-time.", "MCW"), 
+("1627", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AK"), 
+("1679", NULL, "", NULL), 
+("1681", NULL, "", NULL), 
+("1699", NULL, "The System of Quality is Prevention", "SRW"), 
+("1700", "SYS394", "", NULL), 
+("1712", "SYS394", "", NULL), 
+("1716", "MAT151", "", NULL), 
+("1730", "COS265", "In event driven programming&#44; the program does nothing except listen for events. Once an event happens&#44; specific code is run. In procedural programming&#44; each line of code simply executes after the line before it. An event is anything that the program can detect&#44; such as a button getting clicked or the system clock reaches a certain time.", "AD"), 
+("1023", "COS265", "No. I can't.", NULL), 
+("1026", "COS230", "Technology in the future. Because it doesn't exist.", NULL), 
+("616", "COS381", "Yes", NULL), 
+("172", "SYS394", "", NULL), 
+("410", "COS320", "", NULL), 
+("1038", "COS351", "", NULL), 
+("1067", "SYS390", "Conformance to requirements", "AK"), 
+("507", "COS341", "", NULL), 
+("1317", "SYS394", "", NULL), 
+("1336", "COS121", "A bunch of nodes that each contain a payload and a pointer to the next node", "SRW"), 
+("1340", NULL, "", NULL), 
+("1358", "COS264", "", NULL), 
+("1359", "MAT151", "", NULL), 
+("1307", "COS284", "", NULL), 
+("1374", "IAS330", "", NULL), 
+("1516", "COS265", "", NULL), 
+("1523", "COS435", "Yes", "SRW"), 
+("1528", NULL, "", NULL), 
+("1333", "COS340", "", NULL), 
+("1121", "COS284", "The decimal value is 92 and the hex value is 0x5c", "AK"), 
+("1271", "COS381", "", NULL), 
+("1624", "SYS394", "", NULL), 
+("1643", "COS351", "", NULL), 
+("811", "COS121", "Data in a Stack is accessed in reverse order that it is inserted (Last In First Out). Data in a Queue is accessed in the same order it is inserted (First In First Out). Both a Stack and a Queue can be represented by an array or linked list. Push refers to inserting data and Pop refers to extracting data from a Stack/Queue", "DKK"), 
+("826", "COS280", "", NULL), 
+("81", "SYS352", "", NULL), 
+("837", NULL, "Did we even study this?", NULL), 
+("314", "COS252", "Draw a picture of a tree. Literally.", NULL), 
+("305", "COS252", "", NULL), 
+("233", "COS240", "", NULL), 
+("859", "COS264", "AJAX is NOT a language or technology in itself; but uses a combination of HTML&#44; CSS&#44; DOM (accessed with Javascript)&#44; asynchronously exchanging of data from browser to server avoiding page reloads&#44; and returning data formats from server to browser in plain text&#44; JSON&#44; or XHTML to name a few.", "MCW"), 
+("864", "COS121", "Static memory allocation refers to the process of allocating memory at compile-time before the associated program is executed and dynamic memory allocation is where memory is allocated as required at run-time.", "NJC"), 
+("512", "COS341", "", NULL), 
+("61", "SYS310", "Enterprise Resource Planning - integrates internal and external data across an entire company (finance&#44; manufacturing&#44; customer service&#44; sales&#44; etc..)", "AS"), 
+("168", "SYS394", "", NULL), 
+("955", NULL, "", NULL), 
+("23", "SYS200", "", NULL), 
+("1202", NULL, "", NULL), 
+("1222", "SYS394", "1. Write a concise decision statement 2. Specify objectives and divide into 'Musts' and 'Wants' 3. Evaluate each option against musts 4. Weigh each want from 1-10 5. Evaluate each option against wants ", NULL), 
+("1304", NULL, "", NULL), 
+("1434", NULL, "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1452", NULL, "", NULL), 
+("1589", NULL, "", NULL), 
+("1590", NULL, "\"When RAM is insufficient while running applications simultaneously&#44; a computer looks at how much of that memory hasn't been used recently by an application and copies that memory to the hard drive. When switching between applications&#44; the now virtual memory exchanges the memory from the hard disk to the RAM allowing supposed \"\"unlimited\"\" RAM.\"", "MCW"), 
+("1605", NULL, "", NULL), 
+("1255", "COS425", "", NULL), 
+("1638", "COS425", "", NULL), 
+("1552", "SYS411", "", NULL), 
+("1668", NULL, "", NULL), 
+("1672", NULL, "", NULL), 
+("1677", "MAT151", "", NULL), 
+("1694", "SYS394", "", NULL), 
+("1698", "SYS394", "", NULL), 
+("1696", "IAS330", "", NULL), 
+("1718", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
+("1722", NULL, "", NULL), 
+("1737", NULL, "CSS Selectors are pattern matching rules that determine which elements are styled according to which rule.  (HTML Example - div.info)", NULL), 
+("87", "SYS352", "", NULL), 
+("127", "SYS390", "", NULL), 
+("986", NULL, "", NULL), 
+("244", "COS250", "", NULL), 
+("1017", NULL, "care about what?", NULL), 
+("1029", NULL, "", NULL), 
+("453", "COS331", "", NULL), 
+("617", "COS381", "", NULL), 
+("1078", "COS120", "", NULL), 
+("1105", NULL, "", NULL), 
+("1218", "SYS394", "", NULL), 
+("1243", "COS121", "A stack is an abstract data structure which follows a LIFO (last in first out) method. In programming&#44; however&#44; the stack is a static allocation of memory and stores function parameters. These parameters can be popped out directly by functional call or have the top popped off in LIFO order.", "MCW"), 
+("1259", NULL, "", NULL), 
+("1289", "COS340", "", NULL), 
+("1329", NULL, "", NULL), 
+("1337", "SYS394", "", NULL), 
+("1370", NULL, "", NULL), 
+("1485", NULL, "", NULL), 
+("1527", "COS265", "", NULL), 
+("1563", NULL, "", NULL), 
+("1611", NULL, "", NULL), 
+("1613", "IAS330", "", NULL), 
+("1250", "COS121", "A stack uses the last in&#44; first out (LIFO) method. This is also known as pop and push. When an object that is placed in the stack is goes to the back or the bottom of the stack which is known as the push. If you remove an object from a stack you remove it from the top of the stack which is known as the pop.", "NJC"), 
+("1122", "COS310", "", NULL), 
+("613", "COS381", "", NULL), 
+("1420", "COS382", "", NULL), 
+("352", "COS264", "CSS means Cascading Style Sheet. This is the file that hold all the code that makes a webpage look pretty. ", "NJC"), 
+("1230", "COS284", "", NULL), 
+("1132", "COS381", "", NULL), 
+("1180", "COS265", "Event handlers are pieces of codes that handle events such as click&#44; hover&#44; etc. This code creates a new button that has a push function. change.setText changes the text displayed on the button to Change null. Then&#44; you add an event listener to the button which handles the push event and does something appropriate.", "aac"), 
+("1153", "COS240", "", NULL), 
+("1416", "COS340", "", NULL), 
+("1162", "COS331", "", NULL), 
+("1170", "SYS352", "", NULL), 
+("1637", NULL, "", NULL), 
+("1639", NULL, "Depends on their stock.", NULL), 
+("1656", "COS351", "", NULL), 
+("1129", "COS340", "", NULL), 
+("1713", NULL, "", NULL), 
+("1269", "COS340", "", NULL), 
+("1721", NULL, "", NULL), 
+("1753", NULL, "", NULL), 
+("819", NULL, "", NULL), 
+("251", "COS250", "", NULL), 
+("75", "SYS352", "", NULL), 
+("475", "COS340", "", NULL), 
+("628", "COS381", "", NULL), 
+("831", NULL, "", NULL), 
+("832", NULL, "", NULL), 
+("151", "SYS390", "", NULL), 
+("847", NULL, "", NULL), 
+("16", "SYS200", "", NULL), 
+("856", NULL, "", NULL), 
+("282", "COS250", "Deep copy is stored in a separate memory address. Shallow copy just copies the value but is really just a pointer to the original.", "SRW"), 
+("866", NULL, "", NULL), 
+("237", "COS240", "", NULL), 
+("878", NULL, "", NULL), 
+("884", NULL, "", NULL), 
+("887", NULL, "", NULL), 
+("652", "COS381", "", NULL), 
+("888", NULL, "", NULL), 
+("894", NULL, "", NULL), 
+("905", NULL, "", NULL), 
+("916", NULL, "", NULL), 
+("919", NULL, "", NULL), 
+("920", NULL, "", NULL), 
+("241", "COS250", "", NULL), 
+("933", NULL, "", NULL), 
+("281", "COS250", "[I have an answer for this&#44; but it's an image&#44; so I'm not sure what to do with it]", "BN"), 
+("506", "COS341", "", NULL), 
+("941", NULL, "", NULL), 
+("400", "COS320", "Binary trees have at most 2 leaves per node&#44; n-ary trees have at most n leaves per node.", "SRW"), 
+("951", NULL, "", NULL), 
+("980", NULL, "", NULL), 
+("985", NULL, "", NULL), 
+("972", "COS284", "Creates a copy of the running process so there are two parallel processes that are exactly the same", "AK"), 
+("996", NULL, "", NULL), 
+("997", NULL, "", NULL), 
+("1000", NULL, "", NULL), 
+("520", "COS341", "", NULL), 
+("169", "SYS394", "", NULL), 
+("1019", NULL, "", NULL), 
+("386", "COS320", "A directed acyclic graph in which each node has at most two branches.", "SRW"), 
+("382", "COS320", "", NULL), 
+("291", "COS252", "Union: members of either set or both. Intersection: members of both sets only.", "SRW"), 
+("1035", NULL, "", NULL), 
+("458", "COS340", "", NULL), 
+("1076", NULL, "", NULL), 
+("1084", NULL, "Document Object Model - cross language platform that for interacting with HTML&#44; XHTML&#44; XML", "AS"), 
+("1086", NULL, "", NULL), 
+("1088", "SYS214", "", NULL), 
+("1092", "SYS411", "Start with an initial random population. Give each individual a fitness according to the fitness function. Apply some kind of pooling technique (e.g. binary tournament) to generate the pool of parents. Apply crossover and mutation operators to individuals in the pool to create a new population. Test for convergence. If true&#44; you are done&#44; else check fitness again and cycle through the process again.", "SRW"), 
+("1223", NULL, "", NULL), 
+("1238", NULL, "", NULL), 
+("1246", NULL, "", NULL), 
+("1249", NULL, "", NULL), 
+("1261", NULL, "", NULL), 
+("1262", "COS311", "The doctrine that actions are right if they are useful or for the benefit of a majority.", "NJC"), 
+("1293", "ENP321", "", NULL), 
+("1300", NULL, "", NULL), 
+("1305", "COS265", "", NULL), 
+("1339", NULL, "", NULL), 
+("1383", NULL, "", NULL), 
+("1422", NULL, "", NULL), 
+("1429", NULL, "", NULL), 
+("1430", NULL, "", NULL), 
+("1466", NULL, "", NULL), 
+("1480", NULL, "", NULL), 
+("1482", NULL, "", NULL), 
+("1487", NULL, "", NULL), 
+("1510", NULL, "", NULL), 
+("1518", NULL, "", NULL), 
+("1522", NULL, "", NULL), 
+("1540", NULL, "", NULL), 
+("1348", "MAT215", "", NULL), 
+("1549", NULL, "", NULL), 
+("1566", NULL, "", NULL), 
+("1569", NULL, "", NULL), 
+("1579", NULL, "", NULL), 
+("1168", "MAT215", "", NULL), 
+("1600", NULL, "", NULL), 
+("1606", "SYS101", "1. The definition of quality is conformance to requirements 2. The system of quality is prevention 3. The standard of quality is zero defects 4. The measure of quality is the price of nonconformance", "AS"), 
+("1315", "SYS390", "", NULL), 
+("1610", NULL, "", NULL), 
+("1612", NULL, "", NULL), 
+("1117", "COS264", "", NULL), 
+("200", "SYS402", "", NULL), 
+("272", "COS250", "", NULL), 
+("1137", "COS425", "", NULL), 
+("509", "COS341", "", NULL), 
+("502", "COS341", "", NULL), 
+("37", "SYS310", "", NULL), 
+("1357", "COS381", "", NULL), 
+("348", "COS264", "", NULL), 
+("690", "COS382", "", NULL), 
+("1174", "COS121", "A queue is FIFO list. That means that the first thing to go in the array is the first that comes out. Its like a line. When people stand on the line for something&#44; the first person on the line is the first person to get served. You join the line at the back and leave at the front.", "NJC"), 
+("1270", "COS381", "", NULL), 
+("1426", "SYS411", "Crossover makes changes to individuals within a population by mixing them in some way with other individuals&#44; while mutation changes an individual randomly&#44; causing variation within the population.", "SRW"), 
+("1425", "SYS352", "", NULL), 
+("1630", NULL, "", NULL), 
+("1192", "COS340", "", NULL), 
+("1684", NULL, "", NULL), 
+("1689", "SYS214", "This basically means that if you design a website that is easy and quick to use and navigate through then the user doesn't mind looking through your site. But if the site is hard to navigate through then the user will probably leave the site and will not be interested even if you site is really important.", "NJC"), 
+("1690", NULL, "", NULL), 
+("1701", NULL, "", NULL), 
+("1703", NULL, "", NULL), 
+("1714", NULL, "Using event listeners and event handlers to drive the logical flow. This means that the program waits for some kind of outside input and responds to it&#44; as opposed to just running through a sequence of commands.", "SRW"), 
+("1723", NULL, "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK"), 
+("926", NULL, "", NULL), 
+("928", NULL, "", NULL), 
+("932", NULL, "", NULL), 
+("90", "SYS352", "Backwards chaining starts with a goal and tries to prove it using the set of initial facts.  Forward-chaining starts with the initial facts and starts establishing everything that can be established from those facts.  CLIPS more naturally supports forward chaining", "BN"), 
+("171", "SYS394", "", NULL), 
+("270", "COS250", "", NULL), 
+("1024", NULL, "", NULL), 
+("714", "COS250", "", NULL), 
+("609", "COS381", "", NULL), 
+("153", "SYS390", "", NULL), 
+("1055", NULL, "", NULL), 
+("1079", NULL, "", NULL), 
+("1103", NULL, "", NULL), 
+("1108", NULL, "", NULL), 
+("1189", "COS331", "", NULL), 
+("1213", "COS284", "", NULL), 
+("1242", NULL, "", NULL), 
+("1247", NULL, "", NULL), 
+("1350", NULL, "", NULL), 
+("1379", NULL, "", NULL), 
+("1396", NULL, "", NULL), 
+("1470", NULL, "", NULL), 
+("1496", NULL, "", NULL), 
+("1354", "COS310", "", NULL), 
+("1560", "SYS411", "", NULL), 
+("1438", "COS381", "", NULL), 
+("1581", NULL, "", NULL), 
+("1191", "COS340", "", NULL), 
+("1604", NULL, "", NULL), 
+("1609", NULL, "", NULL), 
+("1335", "SYS390", "", NULL), 
+("1152", "COS121", "", NULL), 
+("1227", "COS264", "", NULL), 
+("1147", "SYS392", "", NULL), 
+("1119", "COS265", "", NULL), 
+("719", "COS320", "", NULL), 
+("440", "COS331", "", NULL), 
+("488", "COS340", "", NULL), 
+("154", "SYS390", "", NULL), 
+("1331", "COS284", "Each case gets a different memory address. A jump table lists all of these addresses and the index is used to move control flow into the correct position in the table.", "SRW"), 
+("1626", NULL, "", NULL), 
+("1513", "COS382", "", NULL), 
+("1671", NULL, "", NULL), 
+("1182", "COS284", "", NULL), 
+("1146", "SYS392", "", NULL), 
+("1751", NULL, "", NULL), 
+("530", "COS350", "", NULL), 
+("406", "COS320", "", NULL), 
+("828", NULL, "", NULL), 
+("527", "COS350", "", NULL), 
+("5", "IAS330", "", NULL), 
+("833", "COS314", "Feedback is important because this is the way that you can find out what things you did well and what things you need to work on and things that you missed or should add. Basically it is so that you find out if the project you are working on is what people will like or not.", "NJC"), 
+("462", "COS340", "", NULL), 
+("689", "COS320", "", NULL), 
+("221", "SYS402", "", NULL), 
+("199", "SYS402", "", NULL), 
+("860", NULL, "", NULL), 
+("875", NULL, "http://en.wikipedia.org/wiki/Ajax_(programming)", "AK"), 
+("451", "COS331", "", NULL), 
+("82", "SYS352", "", NULL), 
+("118", "SYS390", "", NULL), 
+("1016", NULL, "", NULL), 
+("1039", NULL, "", NULL), 
+("627", "COS381", "Reverse engineering compiled code. Squeezing every bit of optimization out of a program. Understanding what is going on under the hood.", "SRW"), 
+("283", "COS250", "", NULL), 
+("969", "COS284", "", NULL), 
+("1075", NULL, "Optimization and classification problems that are quantifiable and have no good brute force solution.", "SRW"), 
+("1096", NULL, "", NULL), 
+("1205", NULL, "", NULL), 
+("1187", "COS320", "", NULL), 
+("1297", NULL, "", NULL), 
+("1295", "ENP352", "", NULL), 
+("1298", NULL, "", NULL), 
+("1346", "COS425", "", NULL), 
+("1432", NULL, "", NULL), 
+("1445", NULL, "", NULL), 
+("1456", NULL, "", NULL), 
+("1469", NULL, "", NULL), 
+("1509", NULL, "", NULL), 
+("1538", NULL, "", NULL), 
+("1542", NULL, "", NULL), 
+("1543", NULL, "", NULL), 
+("1591", NULL, "", NULL), 
+("1592", NULL, "", NULL), 
+("1603", NULL, "", NULL), 
+("1144", "SYS390", "", NULL), 
+("1308", "COS314", "", NULL), 
+("1159", "COS314", "", NULL), 
+("1123", "COS310", "", NULL), 
+("258", "COS250", "", NULL), 
+("73", "SYS352", "", NULL), 
+("1266", "COS265", "", NULL), 
+("1114", "COS240", "", NULL), 
+("1667", NULL, "", NULL), 
+("1687", NULL, "", NULL), 
+("881", NULL, "", NULL), 
+("140", "SYS390", "", NULL), 
+("234", "COS240", "", NULL), 
+("298", "COS252", "", NULL), 
+("243", "COS250", "", NULL), 
+("260", "COS250", "", NULL), 
+("294", "COS252", "", NULL), 
+("987", "COS284", "Sometimes", "SRW"), 
+("1011", NULL, "", NULL), 
+("482", "COS340", "", NULL), 
+("309", "COS252", "", NULL), 
+("631", "COS381", "", NULL), 
+("389", "COS320", "", NULL), 
+("1224", NULL, "", NULL), 
+("1248", NULL, "", NULL), 
+("1327", "MAT215", "", NULL), 
+("1362", NULL, "", NULL), 
+("1384", NULL, "", NULL), 
+("1471", NULL, "", NULL), 
+("1472", NULL, "", NULL), 
+("1475", NULL, "", NULL), 
+("1477", NULL, "", NULL), 
+("1484", NULL, "", NULL), 
+("1615", NULL, "", NULL), 
+("1226", "COS264", "", NULL), 
+("1158", "COS314", "", NULL), 
+("337", "COS264", "", NULL), 
+("463", "COS340", "", NULL), 
+("1165", "COS340", "", NULL), 
+("383", "COS320", "", NULL), 
+("257", "COS250", "", NULL), 
+("1216", "SYS390", "", NULL), 
+("1211", "COS265", "", NULL), 
+("1178", "COS264", "", NULL), 
+("353", "COS264", "", NULL), 
+("1112", "COS121", "", NULL), 
+("1251", "COS121", "", NULL), 
+("1128", "COS340", "", NULL), 
+("1177", "COS264", "", NULL), 
+("1621", NULL, "", NULL), 
+("1629", "SYS310", "", NULL), 
+("1654", NULL, "", NULL), 
+("1732", NULL, "", NULL), 
+("1754", NULL, "", NULL), 
+("812", NULL, "", NULL), 
+("818", NULL, "", NULL), 
+("821", NULL, "", NULL), 
+("275", "COS250", "", NULL), 
+("827", NULL, "", NULL), 
+("289", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("846", NULL, "", NULL), 
+("144", "SYS390", "", NULL), 
+("849", NULL, "", NULL), 
+("852", NULL, "", NULL), 
+("524", "COS350", "", NULL), 
+("867", NULL, "", NULL), 
+("868", NULL, "", NULL), 
+("334", "COS264", "", NULL), 
+("883", NULL, "", NULL), 
+("893", NULL, "", NULL), 
+("297", "COS252", "", NULL), 
+("917", NULL, "number of modes", NULL), 
+("921", NULL, "", NULL), 
+("925", NULL, "", NULL), 
+("629", "COS381", "", NULL), 
+("950", NULL, "", NULL), 
+("679", "COS250", "", NULL), 
+("991", NULL, "", NULL), 
+("333", "COS264", "", NULL), 
+("345", "COS264", "Pieces of data transmitted across the web stored in a user's browser that can be referenced by the web page they oriented from to access a user's previous activity or data.", "AS"), 
+("68", "SYS352", "", NULL), 
+("973", "COS284", "Re-associates the current thread with a new program.", "SRW"), 
+("1012", NULL, "", NULL), 
+("343", "COS264", "", NULL), 
+("59", "SYS310", "", NULL), 
+("1030", NULL, "", NULL), 
+("424", "COS331", "", NULL), 
+("1040", NULL, "", NULL), 
+("1044", NULL, "", NULL), 
+("1045", NULL, "", NULL), 
+("1048", NULL, "", NULL), 
+("1052", NULL, "", NULL), 
+("387", "COS320", "", NULL), 
+("653", "COS381", "", NULL), 
+("311", "COS252", "", NULL), 
+("1109", NULL, "", NULL), 
+("1199", NULL, "", NULL), 
+("1219", NULL, "", NULL), 
+("1239", NULL, "", NULL), 
+("1241", NULL, "", NULL), 
+("1283", NULL, "", NULL), 
+("1286", NULL, "", NULL), 
+("1318", NULL, "", NULL), 
+("1332", "COS284", "", NULL), 
+("1351", NULL, "", NULL), 
+("1360", NULL, "", NULL), 
+("1369", NULL, "", NULL), 
+("1378", NULL, "", NULL), 
+("1385", NULL, "", NULL), 
+("1394", NULL, "", NULL), 
+("1443", NULL, "", NULL), 
+("1460", NULL, "", NULL), 
+("1468", NULL, "", NULL), 
+("1198", "SYS392", "", NULL), 
+("1559", NULL, "", NULL), 
+("1399", "COS381", "", NULL), 
+("1575", NULL, "", NULL), 
+("1587", NULL, "", NULL), 
+("1321", "COS121", "", NULL), 
+("1185", "COS314", "", NULL), 
+("279", "COS250", "", NULL), 
+("329", "COS264", "", NULL), 
+("531", "COS350", "", NULL), 
+("1172", "SYS390", "", NULL), 
+("1309", "COS340", "", NULL), 
+("247", "COS250", "", NULL), 
+("276", "COS250", "", NULL), 
+("1184", "COS314", "", NULL), 
+("1440", "SYS411", "", NULL), 
+("1353", "COS265", "", NULL), 
+("1288", "COS340", "", NULL), 
+("1155", "COS265", "", NULL), 
+("1622", NULL, "First prove for 1. Then prove for n+1. Now you have proved for all cases.", "SRW"), 
+("1647", NULL, "Lots of parentheses. Allows programming from the bottom up. Can be used to very quickly write functions. Great for processing lists.", "SRW"), 
+("1653", NULL, "", NULL), 
+("1197", "SYS390", "", NULL), 
+("1665", NULL, "", NULL), 
+("1682", NULL, "", NULL), 
+("1685", NULL, "", NULL), 
+("1755", NULL, "", NULL), 
+("897", NULL, "", NULL), 
+("929", NULL, "", NULL), 
+("214", "SYS402", "", NULL), 
+("175", "SYS394", "", NULL), 
+("992", NULL, "", NULL), 
+("528", "COS350", "", NULL), 
+("1003", NULL, "", NULL), 
+("325", "COS264", "", NULL), 
+("1057", NULL, "", NULL), 
+("1263", NULL, "", NULL), 
+("1455", NULL, "", NULL), 
+("1254", "COS425", "", NULL), 
+("1478", NULL, "", NULL), 
+("1493", NULL, "", NULL), 
+("1501", NULL, "", NULL), 
+("1519", NULL, "", NULL), 
+("1574", NULL, "", NULL), 
+("967", "COS284", "", NULL), 
+("839", "COS314", "", NULL), 
+("1364", "COS264", "", NULL), 
+("1645", NULL, "", NULL), 
+("1272", "COS381", "", NULL), 
+("1133", "COS381", "", NULL), 
+("536", "COS350", "", NULL), 
+("335", "COS264", "", NULL), 
+("822", NULL, "", NULL), 
+("619", "COS381", "", NULL), 
+("835", NULL, "", NULL), 
+("836", NULL, "", NULL), 
+("838", NULL, "", NULL), 
+("870", NULL, "", NULL), 
+("633", "COS381", "", NULL), 
+("106", "SYS390", "", NULL), 
+("1", "IAS330", "", NULL), 
+("904", NULL, "", NULL), 
+("923", NULL, "", NULL), 
+("927", NULL, "", NULL), 
+("953", NULL, "", NULL), 
+("1009", NULL, "", NULL), 
+("491", "COS340", "", NULL), 
+("1301", NULL, "", NULL), 
+("1303", NULL, "", NULL), 
+("1433", NULL, "", NULL), 
+("1565", NULL, "", NULL), 
+("1134", "COS382", "", NULL), 
+("1389", "COS284", "", NULL), 
+("1256", "COS425", "", NULL), 
+("442", "COS331", "", NULL), 
+("1441", "SYS411", "\"Subfield of artificial intelligence. Deals with algorithms that can \"\"learn\"\". They take information as input and try to come up with patterns or ways of interpreting the data in order to make decisions.\"", "SRW"), 
+("1620", NULL, "", NULL), 
+("1693", NULL, "", NULL), 
+("1720", NULL, "", NULL), 
+("1735", NULL, "", NULL), 
+("473", "COS340", "", NULL), 
+("229", "CEN493", "", NULL), 
+("9", "IAS330", "", NULL), 
+("931", NULL, "Provide a counterexample.", "SRW"), 
+("935", NULL, "", NULL), 
+("938", NULL, "", NULL), 
+("983", NULL, "", NULL), 
+("984", NULL, "", NULL), 
+("995", NULL, "", NULL), 
+("489", "COS340", "", NULL), 
+("1065", NULL, "", NULL), 
+("1080", NULL, "", NULL), 
+("1099", NULL, "", NULL), 
+("1220", NULL, "", NULL), 
+("1225", NULL, "", NULL), 
+("1265", NULL, "", NULL), 
+("1120", "COS284", "", NULL), 
+("1495", NULL, "", NULL), 
+("1556", NULL, "", NULL), 
+("1607", NULL, "", NULL), 
+("1608", NULL, "", NULL), 
+("1365", "COS350", "", NULL), 
+("513", "COS341", "", NULL), 
+("1154", "COS264", "", NULL), 
+("1229", "COS284", "", NULL), 
+("1161", "COS320", "", NULL), 
+("1124", "COS320", "", NULL), 
+("1419", "COS381", "", NULL), 
+("1157", "COS284", "", NULL), 
+("1355", "COS320", "", NULL), 
+("1313", "SYS352", "", NULL), 
+("540", "COS350", "", NULL), 
+("1322", "COS264", "", NULL), 
+("1142", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
+("1175", "COS121", "Write a function that calls itself. More specifically&#44; you want to have a base case and a recursive case. The base case indicates when to stop recursing&#44; and is what you eventually want to reach. The recursive case(s) call the function again.", "SRW"), 
+("1635", "SYS411", "\"Basic unit is a perceptron. Takes input and applies a function to it to determine if it will \"\"fire\"\" or not (produces output). Many of these can be linked together to form a network. To make a useful neural net&#44; feedback is crucial. This means that the network changes if perceptrons fired incorrectly. Over time&#44; the network will become better at doing its job.\"", "SRW"), 
+("1151", "COS120", "", NULL), 
+("1314", "SYS352", "", NULL), 
+("1593", "COS382", "", NULL), 
+("1207", "COS240", "", NULL), 
+("1695", NULL, "", NULL), 
+("1210", "COS265", "", NULL), 
+("1715", NULL, "", NULL), 
+("1750", NULL, "", NULL), 
+("422", "COS331", "", NULL), 
+("439", "COS331", "", NULL), 
+("232", "COS240", "", NULL), 
+("855", NULL, "", NULL), 
+("336", "COS264", "", NULL), 
+("285", "COS250", "", NULL), 
+("876", NULL, "", NULL), 
+("889", NULL, "", NULL), 
+("903", NULL, "", NULL), 
+("909", NULL, "", NULL), 
+("910", NULL, "", NULL), 
+("913", NULL, "", NULL), 
+("930", NULL, "", NULL), 
+("937", NULL, "", NULL), 
+("143", "SYS390", "", NULL), 
+("949", NULL, "", NULL), 
+("538", "COS350", "", NULL), 
+("576", "COS351", "", NULL), 
+("1025", NULL, "", NULL), 
+("433", "COS331", "", NULL), 
+("1053", NULL, "", NULL), 
+("975", "COS284", "", NULL), 
+("1058", NULL, "", NULL), 
+("1060", NULL, "", NULL), 
+("1072", NULL, "", NULL), 
+("1073", NULL, "", NULL), 
+("299", "COS252", "", NULL), 
+("1077", NULL, "", NULL), 
+("1081", NULL, "", NULL), 
+("14", "SYS200", "", NULL), 
+("1093", NULL, "", NULL), 
+("1097", NULL, "", NULL), 
+("1183", "COS284", "", NULL), 
+("1221", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1278", "ENP352", "", NULL), 
+("1274", "ENP321", "", NULL), 
+("1352", NULL, "", NULL), 
+("1368", NULL, "", NULL), 
+("1412", NULL, "", NULL), 
+("1414", NULL, "", NULL), 
+("1423", "COS381", "", NULL), 
+("1457", NULL, "", NULL), 
+("1490", NULL, "", NULL), 
+("1164", "COS340", "", NULL), 
+("1534", NULL, "", NULL), 
+("1535", NULL, "", NULL), 
+("1541", NULL, "", NULL), 
+("1558", NULL, "", NULL), 
+("1570", NULL, "", NULL), 
+("1582", NULL, "", NULL), 
+("1618", NULL, "", NULL), 
+("1237", "SYS352", "", NULL), 
+("253", "COS250", "", NULL), 
+("1287", "COS331", "", NULL), 
+("421", "COS331", "", NULL), 
+("541", "COS350", "", NULL), 
+("249", "COS250", "", NULL), 
+("1181", "COS284", "", NULL), 
+("428", "COS331", "", NULL), 
+("1372", "COS350", "", NULL), 
+("1190", "COS340", "", NULL), 
+("1113", "COS121", "", NULL), 
+("1206", "COS121", "", NULL), 
+("1659", NULL, "", NULL), 
+("1697", NULL, "", NULL), 
+("902", NULL, "", NULL), 
+("940", NULL, "", NULL), 
+("981", NULL, "", NULL), 
+("698", "MAT215", "", NULL), 
+("993", NULL, "", NULL), 
+("22", "SYS200", "", NULL), 
+("109", "SYS390", "", NULL), 
+("1071", NULL, "", NULL), 
+("1074", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1082", NULL, "", NULL), 
+("1085", NULL, "", NULL), 
+("52", "SYS310", "", NULL), 
+("974", "COS284", "", NULL), 
+("1107", NULL, "", NULL), 
+("1320", NULL, "", NULL), 
+("1156", "COS284", "", NULL), 
+("1491", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1511", NULL, "", NULL), 
+("1439", "COS382", "", NULL), 
+("1525", NULL, "", NULL), 
+("1601", NULL, "", NULL), 
+("1116", "COS264", "Document Object Model - cross language platform that for interacting with HTML&#44; XHTML&#44; XML", "AK"), 
+("1347", "COS425", "", NULL), 
+("1381", "COS350", "", NULL), 
+("814", NULL, "", NULL), 
+("815", NULL, "", NULL), 
+("820", NULL, "", NULL), 
+("858", NULL, "", NULL), 
+("332", "COS264", "", NULL), 
+("319", "COS252", "", NULL), 
+("504", "COS341", "", NULL), 
+("620", "COS381", "", NULL), 
+("914", NULL, "", NULL), 
+("397", "COS320", "", NULL), 
+("423", "COS331", "", NULL), 
+("122", "SYS390", "", NULL), 
+("1031", NULL, "", NULL), 
+("1201", NULL, "", NULL), 
+("1260", NULL, "", NULL), 
+("1299", NULL, "", NULL), 
+("1127", "COS331", "", NULL), 
+("1436", "COS381", "", NULL), 
+("1448", NULL, "", NULL), 
+("425", "COS331", "", NULL), 
+("1208", "COS264", "", NULL), 
+("1648", NULL, "", NULL), 
+("1675", NULL, "", NULL), 
+("1704", NULL, "", NULL), 
+("895", NULL, "", NULL), 
+("934", NULL, "", NULL), 
+("956", "COS284", "", NULL), 
+("1022", NULL, "", NULL), 
+("1050", NULL, "", NULL), 
+("1056", NULL, "", NULL), 
+("56", "SYS310", "", NULL), 
+("176", "SYS394", "", NULL), 
+("1091", NULL, "", NULL), 
+("1104", NULL, "", NULL), 
+("1328", NULL, "", NULL), 
+("1386", NULL, "", NULL), 
+("1453", NULL, "", NULL), 
+("1497", NULL, "", NULL), 
+("1557", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
+("1545", "COS284", "", NULL), 
+("344", "COS264", "", NULL), 
+("1209", "COS265", "", NULL), 
+("1324", "COS340", "", NULL), 
+("242", "COS250", "", NULL), 
+("1646", NULL, "", NULL), 
+("1688", NULL, "", NULL), 
+("1740", NULL, "", NULL), 
+("1743", NULL, "", NULL), 
+("1758", NULL, "", NULL), 
+("813", NULL, "", NULL), 
+("817", NULL, "", NULL), 
+("829", NULL, "", NULL), 
+("845", NULL, "", NULL), 
+("95", "SYS352", "", NULL), 
+("857", NULL, "", NULL), 
+("873", NULL, "", NULL), 
+("54", "SYS310", "", NULL), 
+("877", NULL, "", NULL), 
+("885", NULL, "", NULL), 
+("900", NULL, "", NULL), 
+("922", NULL, "", NULL), 
+("407", "COS320", "", NULL), 
+("952", NULL, "", NULL), 
+("340", "COS264", "", NULL), 
+("1001", NULL, "", NULL), 
+("1004", NULL, "", NULL), 
+("1046", NULL, "", NULL), 
+("568", "COS351", "", NULL), 
+("1061", NULL, "", NULL), 
+("1090", NULL, "", NULL), 
+("437", "COS331", "", NULL), 
+("1098", NULL, "", NULL), 
+("1102", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
+("1264", NULL, "", NULL), 
+("1316", NULL, "", NULL), 
+("1343", NULL, "", NULL), 
+("1388", NULL, "", NULL), 
+("1397", NULL, "", NULL), 
+("1409", NULL, "", NULL), 
+("1413", NULL, "", NULL), 
+("1446", NULL, "", NULL), 
+("1451", NULL, "", NULL), 
+("1467", NULL, "", NULL), 
+("1486", NULL, "", NULL), 
+("1524", NULL, "", NULL), 
+("1544", NULL, "", NULL), 
+("1176", "COS240", "", NULL), 
+("1567", NULL, "", NULL), 
+("1572", NULL, "", NULL), 
+("1576", NULL, "", NULL), 
+("1584", NULL, "", NULL), 
+("1614", NULL, "", NULL), 
+("1232", "COS381", "", NULL), 
+("1118", "COS265", "", NULL), 
+("1660", NULL, "", NULL), 
+("1669", NULL, "", NULL), 
+("1702", NULL, "", NULL), 
+("1708", NULL, "", NULL), 
+("939", NULL, "", NULL), 
+("308", "COS252", "", NULL), 
+("259", "COS250", "", NULL), 
+("245", "COS250", "", NULL), 
+("266", "COS250", "", NULL), 
+("1007", NULL, "", NULL), 
+("1236", "MAT215", "", NULL), 
+("1344", NULL, "", NULL), 
+("1465", NULL, "", NULL), 
+("1212", "COS284", "", NULL), 
+("434", "COS331", "", NULL), 
+("431", "COS331", "", NULL), 
+("1306", "COS284", "", NULL), 
+("1435", "COS284", "", NULL), 
+("1421", "COS382", "", NULL), 
+("1744", NULL, "", NULL), 
+("1745", NULL, "", NULL), 
+("268", "COS250", "", NULL), 
+("264", "COS250", "", NULL), 
+("556", "COS350", "", NULL), 
+("1051", NULL, "", NULL), 
+("525", "COS350", "", NULL), 
+("1094", NULL, "", NULL), 
+("1282", NULL, "", NULL), 
+("1408", NULL, "", NULL), 
+("1458", NULL, "", NULL), 
+("1345", "COS350", "", NULL), 
+("1427", "SYS411", "", NULL), 
+("307", "COS252", "", NULL), 
+("1125", "COS320", "", NULL), 
+("1676", NULL, "", NULL), 
+("1683", NULL, "", NULL), 
+("942", NULL, "", NULL), 
+("943", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("420", "COS331", "", NULL), 
+("1002", NULL, "", NULL), 
+("1217", NULL, "", NULL), 
+("1281", "MAT215", "", NULL), 
+("1342", NULL, "", NULL), 
+("1462", NULL, "", NULL), 
+("1515", NULL, "", NULL), 
+("1143", "MAT215", "", NULL), 
+("685", "COS250", "", NULL), 
+("1169", "SYS352", "", NULL), 
+("1323", "COS284", "", NULL), 
+("1407", "MAT215", "", NULL), 
+("1131", "COS350", "", NULL), 
+("1488", "COS284", "", NULL), 
+("1678", NULL, "", NULL), 
+("1717", NULL, "", NULL), 
+("1752", NULL, "", NULL), 
+("823", NULL, "", NULL), 
+("478", "COS340", "", NULL), 
+("841", NULL, "", NULL), 
+("842", NULL, "", NULL), 
+("517", "COS341", "", NULL), 
+("871", NULL, "", NULL), 
+("555", "COS350", "", NULL), 
+("898", NULL, "", NULL), 
+("464", "COS340", "", NULL), 
+("395", "COS320", "", NULL), 
+("1049", NULL, "", NULL), 
+("1047", NULL, "", NULL), 
+("1069", NULL, "", NULL), 
+("1145", "SYS390", "", NULL), 
+("1194", "IAS330", "", NULL), 
+("1277", "ENP352", "", NULL), 
+("1387", NULL, "", NULL), 
+("1492", NULL, "", NULL), 
+("1506", NULL, "", NULL), 
+("1530", "ENP321", "", NULL), 
+("1571", NULL, "", NULL), 
+("1580", NULL, "", NULL), 
+("1179", "COS265", "", NULL), 
+("1623", NULL, "", NULL), 
+("1652", NULL, "", NULL), 
+("1658", NULL, "", NULL), 
+("1756", NULL, "", NULL), 
+("379", "COS320", "", NULL), 
+("1101", NULL, "", NULL), 
+("1494", NULL, "", NULL), 
+("1499", NULL, "", NULL), 
+("1526", NULL, "", NULL), 
+("1573", NULL, "", NULL), 
+("1664", NULL, "", NULL), 
+("1748", NULL, "", NULL), 
+("840", NULL, "", NULL), 
+("610", "COS381", "", NULL), 
+("908", NULL, "", NULL), 
+("1130", "COS350", "", NULL), 
+("1284", NULL, "", NULL), 
+("1302", NULL, "", NULL), 
+("1136", "COS425", "", NULL), 
+("1634", NULL, "", NULL), 
+("549", "COS350", "", NULL), 
+("1083", NULL, "", NULL), 
+("1100", NULL, "", NULL), 
+("1616", NULL, "", NULL), 
+("1424", "COS382", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1275", "ENP321", "", NULL), 
+("427", "COS331", "", NULL), 
+("1268", "COS331", "", NULL), 
+("848", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("872", NULL, "", NULL), 
+("874", NULL, "", NULL), 
+("896", NULL, "", NULL), 
+("912", NULL, "", NULL), 
+("915", NULL, "", NULL), 
+("385", "COS320", "", NULL), 
+("511", "COS341", "", NULL), 
+("954", NULL, "", NULL), 
+("1013", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("15", "SYS200", "", NULL), 
+("1089", "COS425", "", NULL), 
+("1349", NULL, "", NULL), 
+("1444", NULL, "", NULL), 
+("1447", NULL, "", NULL), 
+("1489", NULL, "", NULL), 
+("1505", NULL, "", NULL), 
+("1548", NULL, "", NULL), 
+("1583", NULL, "", NULL), 
+("271", "COS250", "", NULL), 
+("133", "SYS390", "", NULL), 
+("1650", NULL, "", NULL), 
+("1739", NULL, "", NULL), 
+("18", "SYS200", "", NULL), 
+("278", "COS250", "", NULL), 
+("1020", NULL, "", NULL), 
+("1070", NULL, "", NULL), 
+("1126", "COS331", "", NULL), 
+("239", "COS240", "", NULL), 
+("346", "COS264", "", NULL), 
+("1686", NULL, "", NULL), 
+("1008", NULL, "", NULL), 
+("1411", NULL, "", NULL), 
+("1651", NULL, "", NULL), 
+("115", "SYS390", "", NULL), 
+("1095", NULL, "", NULL), 
+("1395", NULL, "", NULL), 
+("1625", NULL, "", NULL), 
+("1633", NULL, "", NULL), 
+("1636", NULL, "", NULL), 
+("1291", "COS381", "", NULL), 
+("816", NULL, "", NULL), 
+("695", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("426", "COS331", "", NULL), 
+("947", NULL, "", NULL), 
+("1006", NULL, "", NULL), 
+("1005", NULL, "", NULL), 
+("1014", NULL, "", NULL), 
+("1018", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1204", NULL, "", NULL), 
+("1377", NULL, "", NULL), 
+("1410", NULL, "", NULL), 
+("1476", NULL, "", NULL), 
+("1553", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms.  The term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1568", NULL, "", NULL), 
+("1577", NULL, "", NULL), 
+("1373", "COS350", "", NULL), 
+("1196", "MAT215", "", NULL), 
+("1759", NULL, "", NULL), 
+("936", NULL, "", NULL), 
+("1027", NULL, "", NULL), 
+("1054", "MAT215", "\"De Morgan's laws are a pair of transformation rules that are both valid rules of inference. The rules allow the expression of conjunctions and disjunctions purely in terms of each other via negation.   EXAMPLE: ~(P ^ Q) = (~P) v (~Q) The rules can be expressed in English as: \n The negation of a conjunction is the disjunction of the negations. \n The negation of a disjunction is the conjunction of the negations.\"", "AK"), 
+("156", "SYS390", "", NULL), 
+("1514", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1578", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1602", NULL, "", NULL), 
+("1461", NULL, "", NULL), 
+("1463", NULL, "", NULL), 
+("1500", NULL, "", NULL), 
+("1596", "MAT215", "RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers&#44; the factoring problem. RSA stands for Ron Rivest&#44; Adi Shamir and Leonard Adleman&#44; who first publicly described it in 1977. Clifford Cocks&#44; an English mathematician&#44; had developed an equivalent system in 1973&#44; but it was classified until 1997. A user of RSA creates and then publishes the product of two large prime numbers&#44; along with an auxiliary value&#44; as their public key. The prime factors must be kept secret. Anyone can use the public key to encrypt a message&#44; but with currently published methods&#44; if the public key is large enough&#44; only someone with knowledge of the prime factors can feasibly decode the message. Whether breaking RSA encryption is as hard as factoring is an open question known as the RSA problem.", "AK"), 
+("1186", "COS320", "", NULL), 
+("1711", "SYS394", "", NULL), 
+("988", "COS265", "", NULL), 
+("998", "COS425", "Ray tracing is when you take into account all the light and how it bounces off every single object", NULL), 
+("1059", NULL, "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1228", "COS265", "", NULL), 
+("1330", NULL, "", NULL), 
+("1512", NULL, "", NULL), 
+("313", "COS252", "", NULL), 
+("899", NULL, "", NULL), 
+("901", NULL, "", NULL), 
+("906", NULL, "", NULL), 
+("320", "COS252", "", NULL), 
+("380", "COS320", "Not as much as Ada Lovelace.", NULL), 
+("948", NULL, "", NULL), 
+("1066", "COS351", "Through transformation matrices", NULL), 
+("1087", "COS425", "Driven key animation is when an animated motion is determined or driven by a value other than time. For example when the width an object is calculated by its distance from the origin in the Y direction. ", "DK"), 
+("1244", "COS265", "", NULL), 
+("1285", NULL, "", NULL), 
+("1536", NULL, "", NULL), 
+("1547", NULL, "", NULL), 
+("1564", NULL, "", NULL), 
+("1617", NULL, "", NULL), 
+("982", NULL, "1. Connection: TCP is connection -oriented. UDP is connectionless. You don't know if it'll get there. 2. Order: With TCP data packets will arrive in the correct order. UDP there is no order. 3. Weight: TCP Is more heavy weight since packets packets may arrive in the wrong order and resent requests have to be sent. UDP doesn't have a connection or order&#44; so it's a lot quicker. 4. Streaming: Data is read as a strema with TCP. There may be multiple packets per read call. UDP is more of a datagram --  one packet per one read call.", NULL), 
+("1554", "COS265", "", NULL), 
+("1555", NULL, "Javascript can add/modify/remove DOM elements.  It can move elements around and can access parents&#44; siblings&#44; and children of elements.", "AK"), 
+("1741", NULL, "", NULL), 
+("810", "COS425", "", NULL), 
+("850", "COS265", "", NULL), 
+("67", "SYS310", "", NULL), 
+("979", "COS265", "", NULL), 
+("1644", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("582", "COS351", "(Both are image processing filters using kernels) Erosion replaces each pixel with the min of all pixels in kernel&#44; dilation is the max of all pixels in kernel.", "SRW"), 
+("1483", "COS252", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1502", "COS265", "", NULL), 
+("1546", NULL, "", NULL), 
+("1757", NULL, "", NULL), 
+("129", "SYS390", "", NULL), 
+("890", NULL, "", NULL), 
+("944", NULL, "", NULL), 
+("476", "COS340", "", NULL), 
+("999", NULL, "", NULL), 
+("1010", "COS280", "In computer science&#44; functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids state and mutable data. It emphasizes the application of functions&#44; in contrast to the imperative programming style&#44; which emphasizes changes in state.[1] Functional programming has its roots in lambda calculus&#44; a formal system developed in the 1930s to investigate function definition&#44; function application&#44; and recursion. Many functional programming languages can be viewed as elaborations on the lambda calculus.[1] Javascript is an example of a functional language. prominent functional programming languages such as Common Lisp&#44; Scheme&#44;[2][3][4][5] ISLISP&#44; JavaScript&#44; Clojure&#44; Racket&#44;[6] Erlang&#44;[7][8][9] OCaml&#44;[10][11] Haskell&#44;[12][13] Scala[14] and F#[15][16] ", "AK"), 
+("1064", "SYS101", "NO.", NULL), 
+("24", "SYS200", "", NULL), 
+("624", "COS381", "", NULL), 
+("861", "COS265", "", NULL), 
+("869", NULL, "", NULL), 
+("161", "SYS390", "", NULL), 
+("1214", "MAT215", "", NULL), 
+("27", "SYS200", "", NULL), 
+("1015", "COS311", "\"Utilitarianism is a theory in normative ethics holding that the proper course of action is the one that maximizes overall \"\"happiness\"\". It is now generally taken to be a form of consequentialism&#44; although when Anscome first introduced that term it was to distinguish between ‘old-fashioned Utilitarianism’ and consequentialism.[1] According to utilitarianism the moral worth of an action is determined only by its resulting outcome although there is debate over how much consideration should be given to actual consequences&#44; foreseen consequences and intended consequences.\"", "AK"), 
+("1037", "COS380", "", NULL), 
+("780", "COS350", "", NULL), 
+("1670", "COS265", "\"In mathematics&#44; a recurrence relation is an equation that recursively defines a sequence&#44; once one or more initial terms are given: each further term of the sequence is defined as a function of the preceding terms. \nThe term difference equation sometimes (and for the purposes of this article) refers to a specific type of recurrence relation. However&#44; \"\"difference equation\"\" is frequently used to refer to any recurrence relation.\"", "AK"), 
+("1742", NULL, "", NULL), 
+("1749", NULL, "", NULL), 
+("456", "COS340", "", NULL), 
+("907", NULL, "", NULL), 
+("994", "COS311", "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK"), 
+("1063", "COS425", "", NULL), 
+("1068", "COS311", "\"Kantian ethics are deontological&#44; revolving entirely around duty rather than emotions or end goals. All actions are performed in accordance with some underlying maxim or principle&#44; which are deeply different from each other; it is according to this that the moral worth of any action is judged. Kant's ethics are founded on his view of rationality as the ultimate good and his belief that all people are fundamentally rational beings. This led to the most important part of Kant's ethics&#44; the formulation of the Categorical Imperative&#44; which is the criterion for whether a maxim is good or bad. The Formulation Rule of Kantianism: \nAct only according to that maxim by which you can at the same time will that it would become a universal law. \n Act so that you always treat others as an end&#44; and never as a means to an end only.\"", "AK"), 
+("174", "SYS394", "", NULL), 
+("240", "COS250", "", NULL), 
+("277", "COS250", "", NULL), 
+("1200", NULL, "", NULL), 
+("1203", "COS311", "\"Deontological ethics or deontology (from Greek deon&#44; \"\"obligation&#44; duty\"\"; and -logia) is the normative ethical position that judges the morality of an action based on the action's adherence to a rule or rules. It is sometimes described as \"\"duty\"\" or \"\"obligation\"\" or \"\"rule\"\" -based ethics&#44; because rules \"\"bind you to your duty\"\".\"", "AK"), 
+("1371", "COS331", "", NULL), 
+("1382", "COS311", "", NULL), 
+("1459", "COS265", "", NULL), 
+("1380", "COS350", "", NULL), 
+("1537", NULL, "", NULL), 
+("1598", NULL, "", NULL);

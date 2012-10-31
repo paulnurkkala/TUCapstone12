@@ -25,7 +25,7 @@
 			      <li><a href="index.php">Home (<?php echo $_SESSION['user'] ?>) </a></li>
 			      <li><a href="questions.php">Questions</a></li>
 			      <li class="active"><a href="courses.php">Courses</a></li>
-
+			      <li><a href="logout.php">Logout</a></li>
 			    </ul>
 			</div>
 		     </div>

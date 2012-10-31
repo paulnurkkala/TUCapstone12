@@ -4,7 +4,7 @@ def fix_str(in_str):
 	out_str = sub('"',"\\\"",in_str)
 	return out_str
 	
-filename = "Questions"
+filename = "Questions2"
 in_file  = open("%s.csv" %filename,"r")
 lines = in_file.readlines()
 in_file.close()
@@ -13,7 +13,11 @@ questions = []
 ahead = "DELETE FROM Answer;\nINSERT INTO Answer (qid, cid, answer, username) VALUES \n"
 answers = []
 count = 0
+lineIndex = 0
 for line in lines[1:]:
+	lineIndex += 1
+	if line == ",,,,,,":
+		continue
 	data = line.split(",")
 	print("%s - %s" % (count, len(data)))
 	count = count + 1
@@ -34,6 +38,15 @@ for line in lines[1:]:
 	else:
 		cname = "\"%s\""%cname #Surround in ""'s
 	answer = fix_str(data[6])[:-1] #Should remove /n
+	for nextLine in lines[lineIndex+1:]:
+		nextData = nextLine.split(",")
+		nextQid = nextData[0]
+		if nextQid != "":
+			break
+		nextQuestion = fix_str(nextData[4])
+		if nextQuestion == "":
+			continue
+		question += "\n"+nextQuestion;
 	questions.append("""("%s", "%s", %s)""" % (qid, question, avg))
 	if len(answer) > 0:
 		answers.append("""("%s", %s, "%s", %s)""" % (qid, cname, answer, name))
