@@ -82,11 +82,13 @@
             <ul class="nav nav-list">
  		<li class="nav-header">Course List</li>
               
-		<?php 
-		   $query = "SELECT DISTINCT C.cid, C.name  FROM Course C
+		<?php
+		 
+		   if(!$_SESSION['user_id']){echo "Please log in"; return;} 
+		   $query = 'SELECT DISTINCT C.cid, C.name  FROM Course C
 		   	     INNER JOIN UserCourse UC ON UC.cid = C.cid
-			     WHERE UC.uid = ".$_SESSION['user_id']."
-			     ";
+			     WHERE UC.uid = '.$_SESSION["user_id"].''
+			     ;
 		   $result = mysql_query($query);
 		   $error =  mysql_error();
 		   if($error){
@@ -103,7 +105,8 @@
 			}else{
 				$output =  '<li id = "'.$row[0].'" ><a onclick="getandParseJson(this);" id = "'.$row[0].'">'.$row[1].'</a></li>';
 			     }
-			echo $output; 
+
+		   if($_SESSION['user_id'])echo $output; 
 		   }
 		   
                 ?>
